@@ -1,0 +1,26 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+.widget_polylang {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0 1em;
+
+      li {
+        padding: 0 1em;
+      }
+  }
+}
+
+.widget_search {
+  display: flex;
+  justify-content: flex-end;
+}
