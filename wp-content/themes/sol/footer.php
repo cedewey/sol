@@ -39,7 +39,7 @@
   </nav><!-- #social-navigation -->
 </footer><!-- #colophon -->
 <div class="report-incident">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScex1fgvuhewnR6IlBUbpNDy0V8SEes8jGftB0SL3a8ma3Jgg/viewform">Report an Incident</a>
+<a href="/en/report-an-incident/">Report an Incident</a>
 </div>
 <?php wp_footer(); ?>
 
