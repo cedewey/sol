@@ -1,7 +1,17 @@
 .sol-info {
-  display: flex;
   justify-content: left;
   text-align: left;
+  float: left;
+  width: 33%;
+}
+
+#mc_embed_signup {
+  float: left;
+  width: 33%;
+}
+
+#mc-embedded-subscribe {
+  margin-top: 10px;
 }
 .site-footer {
   position: relative;
@@ -16,24 +26,56 @@
   }
 }
 
+@media screen and (max-width: $query__medium) {
+  .sol-info {
+    width: 100%;
+    text-align: center;
+  }
+  #mc_embed_signup {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .social-navigation {
+    width:100%;
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .social-navigation {
+    float: left;
+    width: 32%;
+  }
+}
+
 .social-navigation {
   ul {
-  display: flex;
   justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-
     a {
       display: block;
       padding: .5em 1em;
       color: white;
       text-decoration: none;
-
-        &:hover,
-        &:focus {
-          text-decoration: underline;
-        }
+      }
+    a:hover, a:focus {
+        text-decoration: underline;
+      }
     }
-  }
+}
+
+.report-incident {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  background: $sol__yellow;
+  width: 100%;
 }

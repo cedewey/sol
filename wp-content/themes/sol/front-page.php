@@ -5,19 +5,17 @@
 
   <div class="container">
 
-    <div class="content about-text">
+    <div class="content about-wrapper">
+      <?php if( get_field("about-image") ): ?>
+        <div class="content about-image">
+        <p><?php the_field("about-image"); ?></p>
+        </div>
+      <?php endif; ?>
 
       <?php if( get_field("about-text") ): ?>
         <p class="about-text"><?php the_field("about-text");?></p>
       <?php endif; ?>
     </div>
-
-    <?php if( get_field("about-image") ): ?>
-      <div class="content about-image">
-      <p><?php the_field("about-image"); ?></p>
-      </div>
-    <?php endif; ?>
-
   </div>
 
     <div class="content about-learn-more-button">

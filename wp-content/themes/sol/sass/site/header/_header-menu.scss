@@ -66,7 +66,7 @@
 
   .menu-item-has-children,
   .page_item_has_children {
-    min-width: 218px;
+    min-width: 145px;
   }
   .menu-item-has-children > a,
   .page_item_has_children > a {
@@ -81,7 +81,7 @@ button.dropdown-toggle {
   background: inherit;
   color: white;
   line-height: 1.5em;
-  padding: .4em 1em .4em .5em;
+  padding: .8em 1em .4em .5em;
 }
 
 .menu-toggle {
@@ -96,6 +96,11 @@ button.dropdown-toggle {
   color: white;
   border: 1px solid hsla(0, 0%, 100%, .3);
 }
+
+button.menu-toggle {
+  background-color: #412A05;
+}
+
 
 /* Toggle small menu and children on */
 .toggled-on ul,
