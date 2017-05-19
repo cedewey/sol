@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .menu-social-english-container, menu-social-media-espanol-container {
+    .menu-social-english-container, .menu-social-media-espanol-container {
     width:100%;
     text-align: center;
     margin: 30px 0;
@@ -41,13 +41,13 @@
 }
 
 @media screen and (min-width: 901px) {
-  .menu-social-english-container, menu-social-media-espanol-container {
+  .menu-social-english-container, .menu-social-media-espanol-container {
     float: left;
     width: 32%;
   }
 }
 
-.menu-social-english-container, menu-social-media-espanol-container {
+.menu-social-english-container, .menu-social-media-espanol-container {
   ul {
   justify-content: center;
   list-style-type: none;
