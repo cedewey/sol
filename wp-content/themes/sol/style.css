@@ -1076,7 +1076,7 @@ button.menu-toggle {
 }
 
 @media screen and (max-width: 900px) {
-	.menu-social-english-container {
+	.menu-social-english-container, menu-social-media-espanol-container {
 		width: 100%;
 		text-align: center;
 		margin: 30px 0;
@@ -1084,13 +1084,13 @@ button.menu-toggle {
 }
 
 @media screen and (min-width: 901px) {
-	.menu-social-english-container {
+	.menu-social-english-container, menu-social-media-espanol-container {
 		float: left;
 		width: 32%;
 	}
 }
 
-.menu-social-english-container ul {
+.menu-social-english-container ul, menu-social-media-espanol-container ul {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -1099,14 +1099,14 @@ button.menu-toggle {
 	padding: 0;
 }
 
-.menu-social-english-container ul a {
+.menu-social-english-container ul a, menu-social-media-espanol-container ul a {
 	display: block;
 	padding: .5em 1em;
 	color: white;
 	text-decoration: none;
 }
 
-.menu-social-english-container ul a:hover, .menu-social-english-container ul a:focus {
+.menu-social-english-container ul a:hover, .menu-social-english-container ul a:focus, menu-social-media-espanol-container ul a:hover, menu-social-media-espanol-container ul a:focus {
 	text-decoration: underline;
 }
 
