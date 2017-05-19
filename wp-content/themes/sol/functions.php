@@ -203,7 +203,7 @@ function sol_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Header', 'sol' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'sol' ),
+		'description'   => esc_html__( 'These elements display in the header. Edits to this could break the header. Edit at your own risk.', 'sol' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -212,7 +212,7 @@ function sol_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'sol' ),
 		'id'            => 'footer',
-		'description'   => esc_html__( 'Add widgets here.', 'sol' ),
+		'description'   => esc_html__( 'These elements display in the footer. Edits to this could break the footer. Edit at your own risk.', 'sol' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -221,7 +221,7 @@ function sol_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Report an Incident', 'sol' ),
 		'id'            => 'report_incident',
-		'description'   => esc_html__( 'Do not change this unless you really know what you are doing.', 'sol' ),
+		'description'   => esc_html__( 'This is the text for the Report and Incident section. Edit at your own risk.', 'sol' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
