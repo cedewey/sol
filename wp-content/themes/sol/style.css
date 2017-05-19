@@ -726,9 +726,10 @@ a:hover, a:active {
 	width: 100%;
 }
 
-#polylang-2 {
+.hotline {
 	float: right;
-	margin: -17px -39px -35px 0;
+	text-align: right;
+	margin-top: -41px;
 }
 
 #search-2 {
@@ -793,12 +794,24 @@ a:hover, a:active {
 	.search-submit {
 		margin-left: 10px;
 	}
-	#polylang-2 {
-		float: left;
-		margin: -17px 105px -35px 0;
-	}
 	.search-form {
 		margin: 0 15px 0 0;
+	}
+	.hotline {
+		text-align: center;
+		padding-top: 10px;
+	}
+}
+
+@media screen and (min-width: 449px) {
+	#polylang-2 {
+		float: right;
+	}
+}
+
+@media screen and (max-width: 448px) {
+	#polylang-2 {
+		float: left;
 	}
 }
 
@@ -1045,17 +1058,11 @@ button.menu-toggle {
 
 .site-footer {
 	position: relative;
-	padding: 1em;
+	padding: 1em 2em 3em 2em;
 	font-family: "Source Sans Pro", sans-serif;
 	color: #fff;
 	background-color: #1FA3B0;
 	text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-	.site-footer {
-		padding: 1em 2em;
-	}
 }
 
 @media screen and (max-width: 900px) {
@@ -1069,7 +1076,7 @@ button.menu-toggle {
 }
 
 @media screen and (max-width: 900px) {
-	.social-navigation {
+	.menu-social-english-container {
 		width: 100%;
 		text-align: center;
 		margin: 30px 0;
@@ -1077,13 +1084,13 @@ button.menu-toggle {
 }
 
 @media screen and (min-width: 901px) {
-	.social-navigation {
+	.menu-social-english-container {
 		float: left;
 		width: 32%;
 	}
 }
 
-.social-navigation ul {
+.menu-social-english-container ul {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -1092,14 +1099,14 @@ button.menu-toggle {
 	padding: 0;
 }
 
-.social-navigation ul a {
+.menu-social-english-container ul a {
 	display: block;
 	padding: .5em 1em;
 	color: white;
 	text-decoration: none;
 }
 
-.social-navigation ul a:hover, .social-navigation ul a:focus {
+.menu-social-english-container ul a:hover, .menu-social-english-container ul a:focus {
 	text-decoration: underline;
 }
 
@@ -1109,7 +1116,8 @@ button.menu-toggle {
 	left: 0;
 	right: 0;
 	text-align: center;
-	padding: 10px;
+	padding: 10px 10px 0 10px;
+	margin-bottom: -15px;
 	background: #F1C239;
 	width: 100%;
 }
@@ -1215,6 +1223,11 @@ button.menu-toggle {
 	max-width: 100%;
 }
 
+/* Hide widget titles. */
+.widget-title {
+	display: none;
+}
+
 .widget_polylang ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1223,7 +1236,6 @@ button.menu-toggle {
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
 	list-style-type: none;
-	padding: 0 1em;
 }
 
 .widget_polylang ul li {

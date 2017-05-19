@@ -7,12 +7,15 @@
 	}
 }
 
+  /* Hide widget titles. */
+.widget-title {
+    display: none;
+}
 .widget_polylang {
   ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    padding: 0 1em;
 
       li {
         padding: 0 1em;

@@ -16,9 +16,10 @@
     width: 100%;
 }
 
-#polylang-2 {
-  float: right;
-  margin: -17px -39px -35px 0;
+.hotline {
+    float: right;
+    text-align: right;
+    margin-top: -41px;
 }
 
 #search-2 {
@@ -85,15 +86,26 @@
   .search-submit {
       margin-left: 10px;
   }
-  #polylang-2 {
-    float: left;
-    margin: -17px 105px -35px 0;
-  }
   .search-form {
     margin: 0 15px 0 0;
   }
+  .hotline {
+    text-align: center;
+    padding-top: 10px;
+  }
 }
 
+@media screen and (min-width:449px) {
+  #polylang-2 {
+    float: right;
+  }
+}
+
+@media screen and (max-width:448px) {
+  #polylang-2 {
+    float: left;
+  }
+}
 
 .site-title {
   margin: 0;

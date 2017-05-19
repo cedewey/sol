@@ -201,9 +201,27 @@ add_filter( 'wp_get_attachment_image_attributes', 'sol_post_thumbnail_sizes_attr
  */
 function sol_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'sol' ),
+		'name'          => esc_html__( 'Header', 'sol' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'sol' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer', 'sol' ),
+		'id'            => 'footer',
+		'description'   => esc_html__( 'Add widgets here.', 'sol' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Report an Incident', 'sol' ),
+		'id'            => 'report_incident',
+		'description'   => esc_html__( 'Do not change this unless you really know what you are doing.', 'sol' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',

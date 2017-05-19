@@ -15,15 +15,11 @@
 }
 .site-footer {
   position: relative;
-  padding: 1em;
+  padding: 1em 2em 3em 2em;
   font-family: $font__main;
   color: #fff;
   background-color: $color__skin;
   text-align: center;
-
-  @media screen and (min-width: $query__small) {
-    padding: 1em 2em;
-  }
 }
 
 @media screen and (max-width: $query__medium) {
@@ -37,7 +33,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .social-navigation {
+    .menu-social-english-container {
     width:100%;
     text-align: center;
     margin: 30px 0;
@@ -45,13 +41,13 @@
 }
 
 @media screen and (min-width: 901px) {
-  .social-navigation {
+  .menu-social-english-container {
     float: left;
     width: 32%;
   }
 }
 
-.social-navigation {
+.menu-social-english-container {
   ul {
   justify-content: center;
   list-style-type: none;
@@ -75,7 +71,8 @@
   left: 0;
   right: 0;
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: -15px;
   background: $sol__yellow;
   width: 100%;
 }
